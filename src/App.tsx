@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import {NewComponent} from "./NewComponent";
+import {Counter} from "./counter";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Todolist title="What to learn" tasks={tasks1}/>
             <Todolist title="Songs" tasks={tasks2}/>
             <NewComponent topCars={topCars}/>
+            <Counter/>
         </div>
     );
 }
