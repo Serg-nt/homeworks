@@ -9,11 +9,11 @@ type NewComponentType = {
     model: string
 }
 
-export const NewComponent = (props: PropsType) => {
+export const TopCar = (props: PropsType) => {
     return (
         <ul>
             {props.topCars.map((el, index) =>
-                <li>
+                <li key={index}>
                     <span>{el.model}</span>
                     <span>{el.manufacturer}</span>
                 </li>)}

@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
-import {NewComponent} from "./NewComponent";
+import {TopCar} from "./TopCar";
 import {Counter} from "./counter";
+import {FilteredMoney} from "./FilteredMoney";
 
 
 function App() {
@@ -28,8 +29,15 @@ function App() {
         <div className="App">
             <Todolist title="What to learn" tasks={tasks1}/>
             <Todolist title="Songs" tasks={tasks2}/>
-            <NewComponent topCars={topCars}/>
-            <Counter/>
+            <div>
+                <TopCar topCars={topCars}/>
+            </div>
+            <div>
+                <Counter/>
+            </div>
+            <div>
+                <FilteredMoney/>
+            </div>
         </div>
     );
 }
