@@ -1,8 +1,15 @@
 import React from "react";
+import {FilterValuesType} from "./FilteredMoney";
 
 type PropsType = {
-    currentMoney: Array<any>
-    onClickFilterHandler: any
+    currentMoney: Array<CurrentMoneyType>
+    onClickFilterHandler: (value: FilterValuesType) => void
+}
+
+type CurrentMoneyType = {
+    banknots: string
+    value: number
+    number: string
 }
 
 export const FilteredMoneyComponent = (props: PropsType) => {
